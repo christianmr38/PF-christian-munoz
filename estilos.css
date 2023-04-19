@@ -222,7 +222,7 @@ article h2{
 form {
     display: flex;
     flex-direction: column;
-    max-width: 400px;
+    max-width: 800px;
     margin: auto;
     padding: 20px;
     background-color: #f2f2f2;
@@ -257,6 +257,18 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: #3b2e26;
+}
+
+.conder h2{
+    text-align: center;
+    padding: 20px;
+}
+
+iframe{
+    display: block;
+    margin: auto;
+    padding: 20px;
+
 }
 
 .footer{
