@@ -208,6 +208,57 @@ article h2{
     background-image: url(./img/7.png);
 }
 
+.titcon{
+    font-size: 30px;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+}
+
+.conizq{
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    padding: 8px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    border: none;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"] {
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    background-color: #9e6b3d;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button[type="submit"]:hover {
+    background-color: #3b2e26;
+}
+
 .footer{
     height: auto;
     width: 100%;
@@ -264,7 +315,7 @@ footer i{
     .nosotros{
         height: 650px;
         grid-template-columns: 1fr 1fr;
-        
+
     }
 }
 
