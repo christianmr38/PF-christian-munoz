@@ -1,0 +1,41 @@
+.nosotros
+    height: 700px
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+
+    @include tablet
+        height: 100vh
+        width: 100%
+
+    .nosizq
+        background-image: url(./img/nosotros.png)
+        background-size: cover
+        background-position: center
+        height: 250px
+        width: 100%
+
+        @include tablet 
+            width: 50%
+            height: 100%
+
+    .nosder
+        height: 200px
+        width: 100%
+        text-align: center
+        padding: 20px
+        margin-bottom: 400px
+
+        @include mobile-s
+            margin-top: 30px
+
+        @include tablet
+            width: 50%
+
+
+        h2
+            font-size: 30px
+            padding: 20px
+
+@import "_reset"
+@import "_layout"

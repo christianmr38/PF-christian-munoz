@@ -1,0 +1,44 @@
+section
+    min-height: 600px
+    width: 100%
+    background-color: white
+    display: flex
+    text-align: center
+    color: #333
+    margin-top: 10px
+    flex-wrap: wrap
+
+    .secizq, .secder
+        height: 100%
+        width: 100%
+        padding: 20px
+        font-size: 20px
+
+        @include tablet
+            width: 50%
+
+        h2
+            text-align: center
+            font-size: 25px
+            padding: 50px
+
+        p
+            margin-bottom: 50px
+
+        img
+            height: auto
+            width: 100%
+            margin-bottom: 50px
+
+        a
+            background-color: white
+            border: 2px solid #333
+            color: #333
+            font-size: 20 px
+            text-decoration: none
+            padding: 5px 10px
+            margin-bottom: 50px
+        a:hover
+            background-color: $color1
+            text-decoration: none
+            color: white
