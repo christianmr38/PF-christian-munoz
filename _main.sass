@@ -8,16 +8,19 @@ main
     h1
         color: white
         font-family: $font1
-        font-size: 40px
-        font-weight: bold
-        padding-top: 150px
+        font-size: $h1
+        padding-top: 100px
         padding-bottom: 50px
         text-align: center
+
+        @include tablet
+            padding-top: 150px
     a
         background-color: white
-        border: 2px solid #333
-        color: #333
-        font-size: 20 px
+        border: 2px solid $color1
+        color: $color1
+        font-family: $font2
+        font-size: $boton
         text-decoration: none
         width: 80%
         height: auto
@@ -25,18 +28,15 @@ main
         text-align: center
         padding: 10px 20px
         display: block
+
+        @include tablet
+            width: 60%
+
+        @include laptop-s
+            width: 40%
+
     a:hover
         background-color: $color1
         text-decoration: none
-        color: white
-        border: 2px solid white
-
-@media only screen and (min-width: 650px) and (max-width: 799px)
-    main a
-        width: 50%
-        height: auto
-
-@media only screen and (min-width: 800px)
-    main a
-        width: 50%
-        height: auto
+        color: $color2
+        border: 2px solid $color2

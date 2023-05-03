@@ -2,28 +2,29 @@ section
     min-height: 600px
     width: 100%
     background-color: white
-    display: flex
     text-align: center
-    color: #333
+    display: flex
     margin-top: 10px
     flex-wrap: wrap
 
     .secizq, .secder
         height: 100%
-        width: 100%
         padding: 20px
-        font-size: 20px
 
         @include tablet
             width: 50%
 
         h2
-            text-align: center
-            font-size: 25px
+            font-family: $font1
+            font-size: $h2
+            color: $color1
             padding: 50px
 
         p
             margin-bottom: 50px
+            color: $color1
+            font-family: $font2
+            font-size: $parrafo
 
         img
             height: auto
@@ -31,14 +32,17 @@ section
             margin-bottom: 50px
 
         a
+            font-family: $font2
             background-color: white
-            border: 2px solid #333
-            color: #333
-            font-size: 20 px
+            border: 2px solid $color1
+            color: $color1
+            font-size: $boton
             text-decoration: none
-            padding: 5px 10px
+            padding: 10px 20px
             margin-bottom: 50px
+
         a:hover
             background-color: $color1
             text-decoration: none
-            color: white
+            color: $color2
+            border: 2px solid $color2

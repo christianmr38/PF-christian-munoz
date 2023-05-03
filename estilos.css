@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;600&family=Libre+Baskerville:ital@0;1&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;600&family=Libre+Baskerville:ital@0;1&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -18,16 +17,21 @@ main h1 {
   color: white;
   font-family: league Spartan, sans-serif;
   font-size: 40px;
-  font-weight: bold;
-  padding-top: 150px;
+  padding-top: 100px;
   padding-bottom: 50px;
   text-align: center;
 }
+@media only screen and (min-width: 768px) {
+  main h1 {
+    padding-top: 150px;
+  }
+}
 main a {
   background-color: white;
-  border: 2px solid #333;
-  color: #333;
-  font-size: 20 px;
+  border: 2px solid #343A40;
+  color: #343A40;
+  font-family: libre Baskerville, serif;
+  font-size: 16px;
   text-decoration: none;
   width: 80%;
   height: auto;
@@ -36,40 +40,35 @@ main a {
   padding: 10px 20px;
   display: block;
 }
+@media only screen and (min-width: 768px) {
+  main a {
+    width: 60%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  main a {
+    width: 40%;
+  }
+}
 main a:hover {
   background-color: #343A40;
   text-decoration: none;
-  color: white;
-  border: 2px solid white;
+  color: #A2A4A6;
+  border: 2px solid #A2A4A6;
 }
 
-@media only screen and (min-width: 650px) and (max-width: 799px) {
-  main a {
-    width: 50%;
-    height: auto;
-  }
-}
-@media only screen and (min-width: 800px) {
-  main a {
-    width: 50%;
-    height: auto;
-  }
-}
 section {
   min-height: 600px;
   width: 100%;
   background-color: white;
-  display: flex;
   text-align: center;
-  color: #333;
+  display: flex;
   margin-top: 10px;
   flex-wrap: wrap;
 }
 section .secizq, section .secder {
   height: 100%;
-  width: 100%;
   padding: 20px;
-  font-size: 20px;
 }
 @media only screen and (min-width: 768px) {
   section .secizq, section .secder {
@@ -77,12 +76,16 @@ section .secizq, section .secder {
   }
 }
 section .secizq h2, section .secder h2 {
-  text-align: center;
-  font-size: 25px;
+  font-family: league Spartan, sans-serif;
+  font-size: 30px;
+  color: #343A40;
   padding: 50px;
 }
 section .secizq p, section .secder p {
   margin-bottom: 50px;
+  color: #343A40;
+  font-family: libre Baskerville, serif;
+  font-size: 18px;
 }
 section .secizq img, section .secder img {
   height: auto;
@@ -90,18 +93,20 @@ section .secizq img, section .secder img {
   margin-bottom: 50px;
 }
 section .secizq a, section .secder a {
+  font-family: libre Baskerville, serif;
   background-color: white;
-  border: 2px solid #333;
-  color: #333;
-  font-size: 20 px;
+  border: 2px solid #343A40;
+  color: #343A40;
+  font-size: 16px;
   text-decoration: none;
-  padding: 5px 10px;
+  padding: 10px 20px;
   margin-bottom: 50px;
 }
 section .secizq a:hover, section .secder a:hover {
   background-color: #343A40;
   text-decoration: none;
-  color: white;
+  color: #A2A4A6;
+  border: 2px solid #A2A4A6;
 }
 
 .footer {
@@ -118,11 +123,16 @@ section .secizq a:hover, section .secder a:hover {
   color: #A2A4A6;
 }
 .footer .redes {
-  color: #A2A4A6;
   font-size: 25px;
   letter-spacing: 25px;
-  i: hover;
-  i-color: white;
+}
+.footer .redes a {
+  text-decoration: none;
+  color: #A2A4A6;
+}
+.footer .redes i:hover {
+  color: white;
+  transform: scale(1.09);
 }
 
 article {
@@ -133,16 +143,13 @@ article h2 {
   font-family: league Spartan, sans-serif;
   font-size: 30px;
   color: #343A40;
-  font-weight: bold;
   text-align: center;
-  background-color: #A2A4A6;
+  background-color: whithe;
   padding: 20px;
   margin-top: 30px;
 }
 article .galeria {
-  width: 100%;
-  height: auto;
-  background-color: #4E6073;
+  background-color: #EDF0F2;
   padding: 20px;
   display: grid;
   grid-template-columns: 1fr;
@@ -222,7 +229,7 @@ article .galeria .item:hover {
 }
 
 .nosotros {
-  height: 700px;
+  height: 800px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -264,42 +271,21 @@ article .galeria .item:hover {
   }
 }
 .nosotros .nosder h2 {
+  font-family: league Spartan, sans-serif;
   font-size: 30px;
+  color: #343A40;
   padding: 20px;
 }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.footer {
-  height: auto;
-  width: 100%;
-  background-color: #343A40;
-  text-align: center;
-  padding: 10px;
-}
-.footer p {
-  margin-bottom: 15px;
+.nosotros .nosder p {
   font-family: libre Baskerville, serif;
   font-size: 18px;
-  color: #A2A4A6;
-}
-.footer .redes {
-  color: #A2A4A6;
-  font-size: 25px;
-  letter-spacing: 25px;
-  i: hover;
-  i-color: white;
+  color: #343A40;
 }
 
 .titcon {
   font-family: league Spartan, sans-serif;
   font-size: 30px;
   color: #343A40;
-  font-weight: bold;
   text-align: center;
   background-color: white;
   padding: 20px;
@@ -347,7 +333,11 @@ article .galeria .item:hover {
   font-family: league Spartan, sans-serif;
   font-size: 30px;
   color: #343A40;
-  font-weight: bold;
   text-align: center;
   padding: 10px;
+}
+.contacto .conder .mapa {
+  display: block;
+  text-align: center;
+  padding-bottom: 30px;
 }/*# sourceMappingURL=estilos.css.map */
