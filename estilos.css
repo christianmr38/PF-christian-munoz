@@ -79,18 +79,19 @@ section .secizq h2, section .secder h2 {
   font-family: league Spartan, sans-serif;
   font-size: 30px;
   color: #343A40;
-  padding: 50px;
 }
 section .secizq p, section .secder p {
-  margin-bottom: 50px;
   color: #343A40;
   font-family: libre Baskerville, serif;
   font-size: 18px;
 }
 section .secizq img, section .secder img {
-  height: auto;
-  width: 100%;
-  margin-bottom: 50px;
+  height: 250px;
+  width: 250px;
+  border: 2px solid #343A40;
+}
+section .secizq img:hover, section .secder img:hover {
+  transform: scale(1.03);
 }
 section .secizq a, section .secder a {
   font-family: libre Baskerville, serif;
@@ -148,6 +149,29 @@ article h2 {
   padding: 20px;
   margin-top: 30px;
 }
+article a {
+  font-family: libre Baskerville, serif;
+  background-color: white;
+  border: 2px solid #343A40;
+  color: #343A40;
+  font-size: 16px;
+  width: 50%;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+article i {
+  font-size: 25px;
+  letter-spacing: 20px;
+}
+article a:hover {
+  background-color: #343A40;
+  text-decoration: none;
+  color: #A2A4A6;
+  border: 2px solid #A2A4A6;
+}
 article .galeria {
   background-color: #EDF0F2;
   padding: 20px;
@@ -155,6 +179,7 @@ article .galeria {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 250px);
   grid-gap: 20px;
+  margin-top: 30px;
 }
 @media only screen and (min-width: 425px) {
   article .galeria {
@@ -206,16 +231,16 @@ article .galeria {
   }
 }
 article .galeria .item1 {
-  background-image: url(./img/2.png);
+  background-image: url(./img/librero-blanco.png);
 }
 article .galeria .item2 {
-  background-image: url(./img/6.png);
+  background-image: url(./img/velador.png);
 }
 article .galeria .item3 {
-  background-image: url(./img/3.png);
+  background-image: url(./img/librero-cajon-blanco.png);
 }
 article .galeria .item4 {
-  background-image: url();
+  background-image: url(./img/escritorio2.png);
 }
 article .galeria .item {
   width: 100%;
@@ -229,7 +254,7 @@ article .galeria .item:hover {
 }
 
 .nosotros {
-  height: 800px;
+  height: 1000px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -258,7 +283,7 @@ article .galeria .item:hover {
   width: 100%;
   text-align: center;
   padding: 20px;
-  margin-bottom: 400px;
+  margin-bottom: 500px;
 }
 @media only screen and (min-width: 375px) {
   .nosotros .nosder {

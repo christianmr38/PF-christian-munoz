@@ -11,6 +11,30 @@ article
         padding: 20px
         margin-top: 30px
 
+    a
+        font-family: $font2
+        background-color: white
+        border: 2px solid $color1
+        color: $color1
+        font-size: $boton
+        width: 50%
+        text-decoration: none
+        padding: 10px 20px
+        display: flex
+        justify-content: center
+        margin: 0 auto
+
+    i
+        font-size: 25px
+        letter-spacing: 20px
+
+
+    a:hover
+        background-color: $color1
+        text-decoration: none
+        color: $color2
+        border: 2px solid $color2
+
     .galeria
         background-color: $color5
         padding: 20px
@@ -18,6 +42,7 @@ article
         grid-template-columns: 1fr
         grid-template-rows: repeat(4, 250px)
         grid-gap: 20px
+        margin-top: 30px
 
         @include mobile-m
             grid-template-columns: 1fr 1fr
@@ -63,16 +88,16 @@ article
                 grid-row: 1/2
 
         .item1
-            background-image: url(./img/2.png)
+            background-image: url(./img/librero-blanco.png)
 
         .item2
-            background-image: url(./img/6.png)
+            background-image: url(./img/velador.png)
 
         .item3
-            background-image: url(./img/3.png)
+            background-image: url(./img/librero-cajon-blanco.png)
 
         .item4
-            background-image: url()
+            background-image: url(./img/escritorio2.png)
 
         .item
             width: 100%
